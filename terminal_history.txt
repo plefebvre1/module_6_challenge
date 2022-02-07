@@ -1,0 +1,255 @@
+(base)
+peter@DESKTOP-09O1VNP MINGW64 ~
+$ conda activate dev
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~
+$ cd FinTech_Workspace/
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace
+$ git clone https://github.com/plefebvre1/module_6_challenge.git
+Cloning into 'module_6_challenge'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), done.
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace
+$ cd module_6_challenge/
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ ls
+LICENSE  README.md
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Images/
+        Resources/
+        san_francisco_housing.ipynb
+
+nothing added to commit but untracked files present (use "git add" to track)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git add Images/
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git add Resources/
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git add san_francisco_housing.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Images/6-4-geoviews-plot.png
+        new file:   Images/avg-sale-px-sq-foot-gross-rent.png
+        new file:   Images/pricing-info-by-neighborhood.png
+        new file:   Images/zoomed-housing-units-by-year.png
+        new file:   Resources/housing_per_year.csv
+        new file:   Resources/neighborhoods_coordinates.csv
+        new file:   Resources/sfo_neighborhoods_census_data.csv
+        new file:   san_francisco_housing.ipynb
+
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git commit -m 'Initial starter code'
+[main 9cb417f] Initial starter code
+ 8 files changed, 1203 insertions(+)
+ create mode 100644 Images/6-4-geoviews-plot.png
+ create mode 100644 Images/avg-sale-px-sq-foot-gross-rent.png
+ create mode 100644 Images/pricing-info-by-neighborhood.png
+ create mode 100644 Images/zoomed-housing-units-by-year.png
+ create mode 100644 Resources/housing_per_year.csv
+ create mode 100644 Resources/neighborhoods_coordinates.csv
+ create mode 100644 Resources/sfo_neighborhoods_census_data.csv
+ create mode 100644 san_francisco_housing.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git push
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 665.90 KiB | 33.29 MiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/plefebvre1/module_6_challenge.git
+   0e3df21..9cb417f  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   san_francisco_housing.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git add san_francisco_housing.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git commit -m 'SF neighborhood data imported and housing units per year analyzed'
+[main 6fba609] SF neighborhood data imported and housing units per year analyzed
+ 1 file changed, 2256 insertions(+), 17 deletions(-)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.23 MiB | 3.79 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/plefebvre1/module_6_challenge.git
+   9cb417f..6fba609  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   san_francisco_housing.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git add san_francisco_housing.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git commit -m 'Avg sales price and avg sales price by neighborhood analyzed and plotted'
+[main aafeac2] Avg sales price and avg sales price by neighborhood analyzed and plotted
+ 1 file changed, 644 insertions(+), 52 deletions(-)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 5.99 KiB | 84.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/plefebvre1/module_6_challenge.git
+   6fba609..aafeac2  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ touch 'terminal_history.txt'
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ ls
+Images/  LICENSE  README.md  Resources/  san_francisco_housing.ipynb  terminal_history.txt
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        terminal_history.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git add terminal_history.txt
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git commit -m 'Terminal History file initiated'
+[main 1224f9c] Terminal History file initiated
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 terminal_history.txt
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/plefebvre1/module_6_challenge.git
+   aafeac2..1224f9c  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   san_francisco_housing.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git add san_francisco_housing.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git commit -m ' Interactive neighborhood map built'
+[main 37194c7]  Interactive neighborhood map built
+ 1 file changed, 750 insertions(+), 45 deletions(-)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 11.11 KiB | 130.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/plefebvre1/module_6_challenge.git
+   1224f9c..37194c7  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   san_francisco_housing.ipynb
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git add san_francisco_housing.ipynb
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git commit -m 'Data story and recommendations added'
+[main 3924204] Data story and recommendations added
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 798 bytes | 798.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/plefebvre1/module_6_challenge.git
+   37194c7..3924204  main -> main
+(dev)
+peter@DESKTOP-09O1VNP MINGW64 ~/FinTech_Workspace/module_6_challenge (main)
+$
